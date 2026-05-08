@@ -30,12 +30,12 @@
 <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
 
 <script>
-  new maplibregl.Map({
-    container: 'map',
-    style: './style.json',
+  const map = new maplibregl.Map({
+    style: 'https://tiles.openfreemap.org/styles/liberty',
     center: [-1.58, 54.14], // UK example
-    zoom: 6
-  });
+    zoom: 6,
+    container: 'map',
+  })
 </script>
 
 </body>
